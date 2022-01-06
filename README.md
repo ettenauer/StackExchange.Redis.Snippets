@@ -6,8 +6,8 @@ Redis can be used as in-memory data structure store, a database, cache, or messa
 - unit tests configured in solution require local redis instance
 ## Code Snippets
 ### Use lua-script to coordinate action by lock via lease time and fencing token accross multiple instances
-- code can be found: `https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Lua/Coordination`
+- code can be found: https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Lua/Coordination
 ### Use stream to implement competitive consumer to process messages accross multiple instances
-- code can be found: `https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Stream/CompetitiveConsumer`
+- code can be found: https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Stream/CompetitiveConsumer
 ### Use stream to implement isolated consumer to process messages accross multiple instances
-- code can be found: `https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Stream/IsolatedConsumer`
+- code can be found: https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Stream/IsolatedConsumer
