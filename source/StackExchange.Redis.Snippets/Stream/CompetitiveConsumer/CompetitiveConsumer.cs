@@ -82,9 +82,6 @@ public class CompetitiveConsumer
                 var streamEntries = await _streamClient.ReadStreamEntriesAsync(_streamId, _consumerGroupId, _clientId, readFromBeginning)
                     .ConfigureAwait(false);
 
-                if (streamEntries.Count == 0)
-                    readFromBeginning = false;
-
                 foreach (var streamEntry in streamEntries)
                 {
                     try
@@ -99,6 +96,8 @@ public class CompetitiveConsumer
                         _logger.LogError(e, $"Failed to process stream entry {streamEntry.Id} for {_streamId}");
                     }
                 }
+
+                readFromBeginning = false;
 
                 if (pendingMessageCheckTime < DateTime.UtcNow)
                 {
