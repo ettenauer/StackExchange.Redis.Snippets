@@ -5,9 +5,9 @@ Redis can be used as in-memory data structure store, a database, cache, or messa
 - run redis via docker-compose locally by using `https://github.com/ettenauer/StackExchange.Redis.Snippets/blob/main/local-environment/docker-compose.yml`
 - unit tests configured in solution require local redis instance
 ## Code Snippets
-### Use a lua-script to coordinate action by lock via lease time and fencing token accross multiple instances
+### Use a lua-script to coordinate action by lock via lease time and fencing token across multiple instances
 - code can be found: https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Lua/Coordination
-### Use a stream to implement competitive consumer to process messages accross multiple instances
+### Use a stream to implement competitive consumer to process messages across multiple instances
 - code can be found: https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Stream/CompetitiveConsumer
-### Use a stream to implement isolated consumer to process messages accross multiple instances
+### Use a stream to implement isolated consumer to process messages across multiple instances
 - code can be found: https://github.com/ettenauer/StackExchange.Redis.Snippets/tree/main/source/StackExchange.Redis.Snippets/Stream/IsolatedConsumer
